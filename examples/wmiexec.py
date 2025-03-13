@@ -126,7 +126,7 @@ class RemoteShell(cmd.Cmd):
         self.__share = share
         self.__output = '\\' + OUTPUT_FILENAME
         self.__outputBuffer = str('')
-        self.__shell = 'cmd.exe /Q /c '
+        self.__shell = ''
         self.__shell_type = shell_type
         self.__pwsh = 'powershell.exe -NoP -NoL -sta -NonI -W Hidden -Exec Bypass -Enc '
         self.__win32Process = win32Process
